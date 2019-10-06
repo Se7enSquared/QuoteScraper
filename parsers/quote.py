@@ -13,7 +13,7 @@ class QuoteParser:
         return f'<Quote: {self.content} by {self.author}>'
     
     def __str__(self):
-        return f'Quote: "{self.content}"\n\t\t-{self.author}'
+        return f'Quote: "{self.content}"\n-{self.author}'
 
     @property
     def content(self):

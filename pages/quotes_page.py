@@ -9,6 +9,6 @@ class QuotesPage:
     
     @property
     def quotes(self):
-        locator = QuotesPageLocators.QUOTE
+        locator = QuotesPageLocators.QUOTES_LOCATOR
         quote_tags = self.soup.select(locator)
-        return [QuotesPageLocators(e) for e in quote_tags]
+        return [QuoteParser(e) for e in quote_tags]
