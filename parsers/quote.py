@@ -8,12 +8,12 @@ class QuoteParser:
 
     def __init__(self, parent):
         self.parent = parent
-    
+
     def __repr__(self):
         return f'<Quote: {self.content} by {self.author}>'
-    
+
     def __str__(self):
-        return f'Quote: "{self.content}"\n-{self.author}'
+        return f'"{self.content}"\n-{self.author}\n'
 
     @property
     def content(self):
